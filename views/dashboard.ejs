@@ -1,0 +1,51 @@
+<style>
+    body {
+      font-family: "Lato", sans-serif;
+    }
+</style>
+    </head>
+  <body>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="/dashboard">Dashboard </a>
+        <a href="/addbook">Add Book</a>
+        <a href="/sell">Sale </a>
+       <a href="/">User </a>
+    </div>
+    <div id="main">
+      <div class="row">
+      <div class="col-4">
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span> 
+      </div>
+      <div class="col-8 ">
+       <H1> Admin Page</H1>
+      </div>
+   </div>
+   <div class="container">
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Book Name</th>
+          <th scope="col">Author Name</th>
+          <th scope="col">Quantity</th>
+          <th scope="col">Shelf Number</th>
+          <th scope="col">ISBN</th>
+          <th scope="col">Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <%bookList.forEach(book => {%>
+            <tr>
+                <th scope="row"><%= book.bookname %></th>
+                <td><%= book.authorname %></td>
+                <td><%= book.Quantity %></td>
+                <td><%= book.Shelf %></td>
+                <td><%= book.ISBN %></td>
+                <td><%= book.Price %></td>
+            </tr>
+        <%})%>
+        </tbody>
+    </table>
+   </div>
+    </div> 
+  </body>  

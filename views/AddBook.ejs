@@ -1,0 +1,45 @@
+<div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="/dashboard">Dashboard </a>
+    <a href="/addbook">Add Book</a>
+    <a href="/sell">Sale </a>
+    <a href="/">User </a>
+  </div>
+  
+  <div id="main">
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+    <div class="container-fluid">
+    <div class="row justify-content-md-center">
+        <div class="col-6">
+            <h2>Add a book</h2>
+    <form action="/addbook" method="POST">
+        <div class="form-group">
+          <label for="bookname">Book Name</label>
+          <input type="name" class="form-control" name="bookname"   placeholder="Enter book title">
+        </div>
+        <div class="form-group">
+            <label for="authorname">Author's Name</label>
+            <input type="name" class="form-control" name="authorname"   placeholder="Enter book title">
+        </div>
+        <div class="form-group">
+            <label for="Quantity">Quantity</label>
+            <input type="number" class="form-control" name="Quantity"  placeholder="Enter book title">
+        </div>
+        <div class="form-group">
+            <label for="Shelf">Shelf Number</label>
+            <input type="number" class="form-control" name="Shelf"  placeholder="Enter book title">
+        </div>
+        <div class="form-group">
+            <label for="ISBN">ISBN Number</label>
+            <input type="number" class="form-control" name="ISBN"  placeholder="Enter book title">
+        </div>
+        <div class="form-group">
+            <label for="Price">Price</label>
+            <input type="number" class="form-control" name="Price"   placeholder="Enter book title">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    </div>
+    </div>
+    </div>
+  </div>
